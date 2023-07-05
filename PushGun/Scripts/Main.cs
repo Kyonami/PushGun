@@ -22,7 +22,7 @@ public class Program
         // 노티를 받기 시작
         MacNotificationCenter notificationCenter = new MacNotificationCenter();
 
-        PushReceiver.it.Init("o.VHB358PlzEBHdgqILRdmOXTbwhCZ3aOT", notificationCenter.ShowNotification);
+        PushReceiver.it.Init("Api key here", notificationCenter.ShowNotification);
         PushReceiver.it.StartGetting();
     }
 }
