@@ -1,0 +1,46 @@
+2023-06-27 20:32:18.869 PushGun[22322:3142881] 
+Unhandled Exception:
+System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. ---> System.Net.Sockets.SocketException: Connection reset by peer
+   --- End of inner exception stack trace ---
+  at System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException (System.Net.Sockets.SocketError error) [0x00007] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult (System.Int16 token) [0x00022] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Threading.Tasks.ValueTask`1+ValueTaskSourceAsTask+<>c[TResult].<.cctor>b__4_0 (System.Object state) [0x00030] in <a6fd05f593b1475085604142d274f037>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at Mono.Net.Security.MobileAuthenticatedStream.InnerRead (System.Boolean sync, System.Int32 requestedSize, System.Threading.CancellationToken cancellationToken) [0x00104] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.AsyncProtocolRequest.InnerRead (System.Threading.CancellationToken cancellationToken) [0x000ac] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.AsyncProtocolRequest.ProcessOperation (System.Threading.CancellationToken cancellationToken) [0x00093] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.AsyncProtocolRequest.StartOperation (System.Threading.CancellationToken cancellationToken) [0x0008b] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.MobileAuthenticatedStream.StartOperation (Mono.Net.Security.MobileAuthenticatedStream+OperationType type, Mono.Net.Security.AsyncProtocolRequest asyncRequest, System.Threading.CancellationToken cancellationToken) [0x0024b] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync (System.Int32 minimumRequiredBytes, System.Threading.CancellationToken cancellationToken, System.Boolean throwOnPrematureClosure) [0x000ff] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult] (System.Memory`1[T] payloadBuffer, System.Threading.CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter) [0x0010d] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult] (System.Memory`1[T] payloadBuffer, System.Threading.CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter) [0x00788] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.WebSocket.ReceiveAsync (System.Memory`1[T] buffer, System.Threading.CancellationToken cancellationToken) [0x00097] in <bf75e636293b491d9c8d70199822f357>:0 
+  at KyoWebSocket.ProcessMessage () [0x00033] in <dcf0f9eea60f41e9b93cdc55e30d76d9>:0 
+  at System.Threading.ThreadHelper.ThreadStart_Context (System.Object state) [0x00014] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00071] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x0002b] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ThreadHelper.ThreadStart () [0x00008] in <a6fd05f593b1475085604142d274f037>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake. ---> System.IO.IOException: Unable to read data from the transport connection: Connection reset by peer. ---> System.Net.Sockets.SocketException: Connection reset by peer
+   --- End of inner exception stack trace ---
+  at System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.ThrowException (System.Net.Sockets.SocketError error) [0x00007] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.Sockets.Socket+AwaitableSocketAsyncEventArgs.GetResult (System.Int16 token) [0x00022] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Threading.Tasks.ValueTask`1+ValueTaskSourceAsTask+<>c[TResult].<.cctor>b__4_0 (System.Object state) [0x00030] in <a6fd05f593b1475085604142d274f037>:0 
+--- End of stack trace from previous location where exception was thrown ---
+
+  at Mono.Net.Security.MobileAuthenticatedStream.InnerRead (System.Boolean sync, System.Int32 requestedSize, System.Threading.CancellationToken cancellationToken) [0x00104] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.AsyncProtocolRequest.InnerRead (System.Threading.CancellationToken cancellationToken) [0x000ac] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.AsyncProtocolRequest.ProcessOperation (System.Threading.CancellationToken cancellationToken) [0x00093] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.AsyncProtocolRequest.StartOperation (System.Threading.CancellationToken cancellationToken) [0x0008b] in <bf75e636293b491d9c8d70199822f357>:0 
+  at Mono.Net.Security.MobileAuthenticatedStream.StartOperation (Mono.Net.Security.MobileAuthenticatedStream+OperationType type, Mono.Net.Security.AsyncProtocolRequest asyncRequest, System.Threading.CancellationToken cancellationToken) [0x0024b] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync (System.Int32 minimumRequiredBytes, System.Threading.CancellationToken cancellationToken, System.Boolean throwOnPrematureClosure) [0x000ff] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult] (System.Memory`1[T] payloadBuffer, System.Threading.CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter) [0x0010d] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult] (System.Memory`1[T] payloadBuffer, System.Threading.CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter) [0x00788] in <bf75e636293b491d9c8d70199822f357>:0 
+  at System.Net.WebSockets.WebSocket.ReceiveAsync (System.Memory`1[T] buffer, System.Threading.CancellationToken cancellationToken) [0x00097] in <bf75e636293b491d9c8d70199822f357>:0 
+  at KyoWebSocket.ProcessMessage () [0x00033] in <dcf0f9eea60f41e9b93cdc55e30d76d9>:0 
+  at System.Threading.ThreadHelper.ThreadStart_Context (System.Object state) [0x00014] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ExecutionContext.RunInternal (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00071] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state, System.Boolean preserveSyncCtx) [0x00000] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ExecutionContext.Run (System.Threading.ExecutionContext executionContext, System.Threading.ContextCallback callback, System.Object state) [0x0002b] in <a6fd05f593b1475085604142d274f037>:0 
+  at System.Threading.ThreadHelper.ThreadStart () [0x00008] in <a6fd05f593b1475085604142d274f037>:0 

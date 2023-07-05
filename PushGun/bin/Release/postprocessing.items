@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="PushGun.app/Contents/MacOS/PushGun">
+      <BCSymbolMapName>PushGun.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>PushGun.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/shimkyonam/Projects/PushGun/PushGun/obj/Release/mtouch-symbols.list</SymbolFile>
+      <DSymName>PushGun.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/shimkyonam/Projects/PushGun/PushGun</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

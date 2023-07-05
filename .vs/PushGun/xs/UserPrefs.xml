@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{6E9B2745-523D-43C9-999B-479F71C897D0}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PushGun/Scripts/Config.cs">
+    <Files>
+      <File FileName="PushGun/Scripts/PushReceiver.cs" Line="79" Column="32" />
+      <File FileName="PushGun/Scripts/MacNotificationCenter.cs" />
+      <File FileName="PushGun/Scripts/KyoWebSocket.cs" />
+      <File FileName="PushGun/Scripts/Config.cs" Line="13" Column="1" />
+      <File FileName="PushGun/Scripts/Utilizer.cs" Line="12" Column="1" />
+      <File FileName="PushGun/Scripts/AppDelegate.cs" />
+      <File FileName="PushGun/Scripts/Singleton.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PushGun" expanded="True">
+            <Node name="PushGun" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PushGun PreferredExecutionTarget="MyMacID" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
